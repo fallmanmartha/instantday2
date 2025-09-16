@@ -1,10 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
-
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
+import Polaroidbox from "../components/polaroidbox.astro";
 ---
 
 <MainLayout title="Titel">
@@ -15,5 +15,9 @@ import Button from "../components/Button.astro";
     <Text teksttype="brødtekst">Så bliver Anders glad:-)</Text>
     <Button>Knapp</Button>
     <Button variant="secondary">Knapp</Button>
+    <Polaroidbox>
+      <Heading htmlheading="h3" size="small" font="display" transform="uppercase">Instant Day</Heading>
+      <Text teksttype="brødtekst">Så bliver Anders glad:-)</Text>
+    </Polaroidbox>
   </main>
 </MainLayout>
