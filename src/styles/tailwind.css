@@ -5,21 +5,6 @@
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
-@font-face {
-  font-family: "Honk";
-  src: url("/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Domine";
-  src: url("/fonts/Domine-Regular.ttf") format("truetype");
-}
-
 @theme {
   /* Her tilføjes theme variable // tokens */
 
@@ -29,12 +14,16 @@
   --text-mobile-h3: 14px;
   --text-mobile-h4: 12px;
   --text-mobile-p: 12px;
+  --text-mobile-ctasmall: 12px;
+  --text-mobile-ctalarge: 15px;
 
   --text-computer-h1: 128px;
   --text-computer-h2: 90px;
   --text-computer-h3: 64px;
   --text-computer-h4: 32px;
   --text-computer-p: 20px;
+  --text-computer-ctasmall: 16px;
+  --text-computer-ctalarge: 20px;
 
   /*Typografi */
   --font-heading: "futura-pt", sans-serif;
