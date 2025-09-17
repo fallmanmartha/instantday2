@@ -1,0 +1,68 @@
+<section x-data="countdown('2025-10-16T12:00:00+02:00')" x-init="start()" class="w-full flex items-center justify-center py-8">
+  <div class="flex gap-10 sm:gap-14">
+    <!-- Days -->
+    <div class="text-center">
+      <div class="text-5xl sm:text-6xl font-semibold tabular-nums" x-text="days"></div>
+      <div class="mt-1 text-xs tracking-[0.2em] uppercase text-neutral-500">Days</div>
+    </div>
+
+    <!-- Hours -->
+    <div class="text-center">
+      <div class="text-5xl sm:text-6xl font-semibold tabular-nums" x-text="hours"></div>
+      <div class="mt-1 text-xs tracking-[0.2em] uppercase text-neutral-500">Hours</div>
+    </div>
+
+    <!-- Minutes -->
+    <div class="text-center">
+      <div class="text-5xl sm:text-6xl font-semibold tabular-nums" x-text="minutes"></div>
+      <div class="mt-1 text-xs tracking-[0.2em] uppercase text-neutral-500">Minutes</div>
+    </div>
+
+    <!-- Seconds -->
+    <div class="text-center">
+      <div class="text-5xl sm:text-6xl font-semibold tabular-nums" x-text="seconds"></div>
+      <div class="mt-1 text-xs tracking-[0.2em] uppercase text-neutral-500">Seconds</div>
+    </div>
+  </div>
+</section>
+
+<!-- Alpine-komponenten -->
+<script is:inline>
+  document.addEventListener("alpine:init", () => {
+    Alpine.data("countdown", (targetISO) => ({
+      target: new Date(targetISO),
+      days: "00",
+      hours: "00",
+      minutes: "00",
+      seconds: "00",
+      _timer: null,
+
+      start() {
+        this.tick();
+        this._timer = setInterval(() => this.tick(), 1000);
+      },
+
+      tick() {
+        const now = new Date();
+        let diff = this.target.getTime() - now.getTime();
+
+        if (diff <= 0) {
+          this.days = this.hours = this.minutes = this.seconds = "00";
+          clearInterval(this._timer);
+          return;
+        }
+
+        const sec = Math.floor(diff / 1000);
+        const d = Math.floor(sec / 86400);
+        const h = Math.floor((sec % 86400) / 3600);
+        const m = Math.floor((sec % 3600) / 60);
+        const s = sec % 60;
+
+        this.days = String(d).padStart(2, "0");
+        this.hours = String(h).padStart(2, "0");
+        this.minutes = String(m).padStart(2, "0");
+        this.seconds = String(s).padStart(2, "0");
+      },
+    }));
+  });
+</script>

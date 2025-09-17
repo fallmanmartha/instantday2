@@ -3,21 +3,42 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
+import Countdown from "../components/countdown.astro";
 import Button from "../components/Button.astro";
 import Polaroidbox from "../components/polaroidbox.astro";
 ---
 
 <MainLayout title="Titel">
-  <main class="container mx-auto p-4">
-    <Heading htmlheading="h1" size="xlarge" font="display" transform="uppercase">Instant Day</Heading>
-    <Heading htmlheading="h1" size="xlarge" font="body" transform="uppercase" styling="light">Lav noget flot!</Heading>
+  <main class="container mx-auto p-8">
+    <section class="mt-8">
+      <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start gap-4">
+        <div class="lg:col-span-8 lg:row-start-1 col-span-12"><Heading htmlheading="h1" size="xlarge" font="display" transform="uppercase">Instant Day</Heading></div>
+        <img src="/ocean.png" alt="ocean" class="lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-2 row-span-6 col-span-5 col-start-9" />
+        <img src="/sunset.jpg" alt="sunset" class="lg:col-span-5 lg:grid grid-cols-subgrid gap-4 lg:row-span-6 col-span-8" />
+        <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-2 hidden lg:block" />
+        <div class="lg:col-start-7 lg:col-span-5 lg:row-start-3 col-start-7"><Countdown /></div>
+      </div>
+    </section>
 
-    <Text teksttype="brødtekst">Så bliver Anders glad:-)</Text>
-    <Button>Knapp</Button>
-    <Button variant="secondary">Knapp</Button>
-    <Polaroidbox>
-      <Heading htmlheading="h3" size="small" font="display" transform="uppercase">Instant Day</Heading>
-      <Text teksttype="brødtekst">Så bliver Anders glad:-)</Text>
-    </Polaroidbox>
+    <section>
+      <div class="lg:grid grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8 items-start">
+        <div class="lg:col-span-5 lg:row-start-2">
+          <Heading htmlheading="h2" size="large" font="display" transform="uppercase">October 8</Heading>
+        </div>
+        <div class="lg:col-span-3 lg:row-start-3 hidden lg:block">
+          <Heading htmlheading="h2" size="large" font="display" transform="uppercase">2025</Heading>
+        </div>
+        <div class="mb-8 lg:col-span-4 lg:col-start-4 lg:row-start-3 lg:-ml-22">
+          <Text teksttype="brødtekst" font="body">October 8 is Instant Day - a day all about celebrating instant photography. So get out your Polaroid, Instax or whatever instant photography camera you are using, and show us your instants.</Text>
+          <Text teksttype="brødtekst"
+            >Instant Day isn't really a photo competition, it's more a homage to good old analogue, instant photography - everybody who participates are winners. But: We do have a nice prize for one lucky instant photographer!</Text
+          >
+        </div>
+        <div class="mb-8 lg:col-start-6 lg:col-span-3 lg:row-start-1 lg:-mt-25">
+          <Button>Share your instant</Button>
+        </div>
+        <img src="/Symaskine.png" alt="Symaskine" class="hidden lg:block lg:col-start-9 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-25" />
+      </div>
+    </section>
   </main>
 </MainLayout>
