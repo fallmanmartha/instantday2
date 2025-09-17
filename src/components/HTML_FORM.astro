@@ -2,11 +2,12 @@
 import "../styles/tailwind.css";
 ---
 
-<section class="md:ml-25 mr-25">
-    <h1 class="font-semibold text-7xl">PARTCIPATE HERE</h1>
-    
+<section class="sm:ml-100 mr-100">
+    <h1 class="font-heading font-semibold text-7xl">PARTCIPATE 
+      <br>
+      HERE</h1>
 
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 mb-3">
     <!-- NAME -->
     <div class="pr-10">
     <label for="navn"> NAME </label>
@@ -17,26 +18,26 @@ import "../styles/tailwind.css";
     <div class="">
     <label for="email"> EMAIL </label>
     <br>
-      <input type="text" id="navn" placeholder="Navn" class="w-full" />
+      <input type="text" id="navn" placeholder="EMAIL" class="w-full" />
     </div>
     </div>
 
     <div class="">
     <label for="submission"> SUBMISSION TITLE </label>
     <br>
-      <input type="text" id="submission" placeholder="SUBMISSION TITLE" class="w-full" />
+      <input type="text" id="submission" placeholder="SUBMISSION TITLE" class="w-full mb-3" />
     </div>
 
         <div class="">
     <label for="story"> SUBMISSION STORY </label>
     <br>
-      <input type="text" id="story" placeholder="SUBMISSION STORY" class="w-full h-25" />
+      <input type="text" id="story" placeholder="SUBMISSION STORY" class="w-full h-25 mb-3" />
     </div>
 
             <div class="">
     <label for="story"> UPLOAD YOUR INSTANT </label>
     <br>
-    <div class="border-1 p-5">
+    <div class="border-1 p-5 mb-3">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 place-self-center">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
 </svg>
@@ -44,8 +45,8 @@ import "../styles/tailwind.css";
     </div>
 
     <div>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I HAVE READ AND AGREE TO THE TERMS AND CONDITIONS</label><br>
+        <input type="checkbox" id="toc" name="toc1" value="toc">
+        <label for="toc1"> I HAVE READ AND AGREE TO THE TERMS AND CONDITIONS</label><br>
     </div>
 
 </section>
