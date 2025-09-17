@@ -130,14 +130,14 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
         <div class="lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-6 col-span-7 col-start-5 row-start-2 row-span-1 mt-15">
-          <img src="/water.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms]" />
+          <img src="/water.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms] mb-3" />
           <p><strong>AMAGER FORBRÆNDING</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong> I'd give my right arm for a cigarette. Taken with a Lomomatic Square.</p>
         </div>
 
         <div class="lg:col-start-7 lg:col-span-5 lg:row-start-6 lg:row-span-1 lg:mt-20 col-start-1 col-span-7 row-start-1 row-span-1">
-          <img src="/stones.jpg" alt="stones" class="intersect:animate-fade-left intersect:duration-[8000ms]" />
+          <img src="/stones.jpg" alt="stones" class="intersect:animate-fade-left intersect:duration-[8000ms] mb-3" />
           <p><strong>AMAGER FÆLLED</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</p>
@@ -146,14 +146,14 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
         <div class="lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-50 col-start-1 col-span-7 row-span-1 row-start-1 mt-20">
-          <img src="/bridge2.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms]" />
+          <img src="/bridge2.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms] mb-3" />
           <p><strong>AMAGER STRAND</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong>From this angle, copenhagen looks like a big city. Taken with a Polaroid Now+ gen 2, with a yellow tint filter.</p>
         </div>
 
         <div class="lg:col-start-6 lg:col-span-6 lg:row-start-3 lg:row-span-1 col-start-2 col-span-10 row-span-2 row-start-2 mt-15">
-          <img src="/street.jpg" alt="street" class="intersect:animate-fade-left intersect:duration-[6000ms]" />
+          <img src="/street.jpg" alt="street" class="intersect:animate-fade-left intersect:duration-[6000ms] mb-3s" />
           <p><strong>HANDS OFF MY HAPPY MEAL!</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong> A casual snap from Burger King. As it shows, the youngest kid didn't want to share his happy meal (or whatever a kids meal is called in Burger King). Taken with an Instax Mini (can't remember which camera).</p>
@@ -162,7 +162,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start lg:mt-0 mt-10">
         <div class="lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-6 col-start-1 col-span-7 row-start-1">
-          <img src="/citylights.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms]" />
+          <img src="/citylights.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms mb-3" />
           <p><strong>LØSERUP STRAND</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p>
@@ -171,7 +171,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
         </div>
 
         <div class="lg:col-start-7 lg:col-span-5 lg:row-start-6 lg:row-span-1 col-start-5 col-span-7 row-start-2 mt-15">
-          <img src="/americaplads.jpg" alt="street" class="intersect:animate-fade-left intersect:duration-[6000ms]" />
+          <img src="/americaplads.jpg" alt="street" class="intersect:animate-fade-left intersect:duration-[6000ms] mb-3" />
           <p><strong>2 X ØRESTAD</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong>A double exposure from my neighbourhood, Ørestad. Taken with a Lomomatic Square.</p>
@@ -198,7 +198,9 @@ import Polaroidbox from "../components/polaroidbox.astro";
               >
             </Polaroidbox>
             <div class="-mt-26 ml-5">
-              <Button>View Collection</Button>
+              <a href="https://www.taschen.com/en/books/photography/40752/the-polaroid-book-45th-ed/" target="_blank" rel="noopener noreferrer">
+                <Button>Veiw Collection</Button>
+              </a>
             </div>
           </div>
           <div class="lg:mt-50 mt-20 intersect:animate-fade-left intersect:duration-[6000ms]">
@@ -212,7 +214,9 @@ import Polaroidbox from "../components/polaroidbox.astro";
               </Text>
             </Polaroidbox>
             <div class="-mt-26 ml-5">
-              <Button>View Collection</Button>
+              <a href="https://www.kelterphotography.com/" target="_blank" rel="noopener noreferrer">
+                <Button>Veiw Collection</Button>
+              </a>
             </div>
           </div>
         </div>
@@ -226,9 +230,12 @@ import Polaroidbox from "../components/polaroidbox.astro";
               <Text teksttype="brødtekst" font="body"> Dan Isaac Wallin is a swedish art photographer, who uses large format and vintage polaroid cameras for his work. His work hangs in numerous houses as posters. </Text>
             </Polaroidbox>
             <div class="-mt-26 ml-5">
-              <Button>View Collection</Button>
+              <a href="hhttps://www.danisaacwallin.com/" target="_blank" rel="noopener noreferrer">
+                <Button>Veiw Collection</Button>
+              </a>
             </div>
           </div>
+
           <div class="lg:mt-65 mt-20 intersect:animate-fade-left intersect:duration-[6000ms]">
             <Polaroidbox variant="gallery">
               <div class="mb-5 mt-5">
@@ -239,7 +246,9 @@ import Polaroidbox from "../components/polaroidbox.astro";
               </Text>
             </Polaroidbox>
             <div class="-mt-26 ml-5">
-              <Button>Read More</Button>
+              <a href="https://en.wikipedia.org/wiki/Maripol" target="_blank" rel="noopener noreferrer">
+                <Button>Read More</Button>
+              </a>
             </div>
           </div>
         </div>
