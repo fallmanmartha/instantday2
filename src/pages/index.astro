@@ -10,6 +10,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
 <MainLayout title="Titel">
   <main class="container mx-auto p-8">
+    <!-- SECTION 1 -->
     <section class="mt-8">
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start gap-4">
         <div class="lg:col-span-8 lg:row-start-1 col-span-12"><Heading htmlheading="h1" size="xlarge" font="display" transform="uppercase">Instant Day</Heading></div>
@@ -20,9 +21,11 @@ import Polaroidbox from "../components/polaroidbox.astro";
       </div>
     </section>
 
+    <!-- SECTION 1 -->
+
     <section>
       <div class="lg:grid grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8 items-start">
-        <div class="lg:col-span-5 lg:row-start-2">
+        <div class="lg:col-span-5 lg:row-start-2 mt-10">
           <Heading htmlheading="h2" size="large" font="display" transform="uppercase">October 8</Heading>
         </div>
         <div class="lg:col-span-3 lg:row-start-3 hidden lg:block">
@@ -38,6 +41,35 @@ import Polaroidbox from "../components/polaroidbox.astro";
           <Button>Share your instant</Button>
         </div>
         <img src="/Symaskine.png" alt="Symaskine" class="hidden lg:block lg:col-start-9 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-25" />
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+
+    <section>
+      <div class="lg:grid grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8 items-start">
+        <div class="lg:col-start-6 lg:col-span-6 lg:row-start-4 lg:row-span-1">
+          <Heading htmlheading="h2" size="large" font="display" transform="uppercase">WHY<br />INSTANT <br />PHOTOGRAPHY?</Heading>
+        </div>
+        <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-2 block lg:hidden w-[70%] ml-auto my-10" />
+
+        <div class="lg:col-start-6 lg:col-span-6 lg:row-start-5 row-span-3">
+          <Text teksttype="brødtekst" font="body"
+            >Instant Photography is a testament to life: It all started back in the 1940’s with a 3 year old kid. She wanted to see her fathers images right away. The father, Edwin Land, embarked on a mission: To invent instant photography.
+          </Text>
+          <Text teksttype="brødtekst" font="body">
+            Half a decade later, Edwin Land launched Instant photography and established the Polaroid brand. Instant photography turned into big business in the 70’s and 80’s, until the digital era almost killed the industry.</Text
+          >
+          <Text teksttype="brødtekst" font="body">
+            The massive amount of time wasted on the small screens have spurred a counterreaction: Analogue, off-line experiences have become popular again. And instant photography is just that: An analogue, life-affirming and tactile photography
+            experience. So let's celebrate life, and make memories.</Text
+          >
+        </div>
+        <img src="/smoke.jpg" alt="smoke" class="hidden lg:block lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-5" />
+        <img src="/tree.png" alt="tree" class="hidden lg:block lg:col-start-10 lg:col-span-2 lg:row-start-1 lg:row-span-6" />
+        <img src="/bridge.jpg" alt="bridge" class="hidden lg:block lg:col-start-3 lg:col-span-3 lg:row-start-7 lg:row-span-3" />
+        <img src="/buildings.jpg" alt="buildings" class="hidden lg:block lg:col-start-8 lg:col-span-4 lg:row-start-8 lg:row-span-3" />
+        <img src="/pinkwater.jpg" alt="pinkwater" class="hidden lg:block lg:col-start-4 lg:col-span-3 lg:row-start-10 lg:row-span-3 mt-10" />
       </div>
     </section>
   </main>
