@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Polaroidboxcopy from "../components/Polaroidboxcopy.astro";
+import Polaroidbox from "../components/polaroidbox.astro";
 ---
 
 <MainLayout>
@@ -27,34 +28,29 @@ import Polaroidboxcopy from "../components/Polaroidboxcopy.astro";
         <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-3 hidden lg:block intersect:animate-fade-left intersect:duration-[5000ms]" />
       </div>
     </section>
+
     <section class="mt-10">
       <div class="mb-10 text-right">
         <Heading htmlheading="h2" size="large" font="display" transform="uppercase">The<br /> Judges</Heading>
       </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="intersect:animate-fade-down intersect:duration-[6000ms]">
-          <Polaroidboxcopy>
-            <Heading htmlheading="h4" size="small" font="display" transform="uppercase">Stefan Grage</Heading>
-            <Text teksttype="brødtekst" font="body">Associate lecturer, Multimedia Design programme at EK.</Text>
-          </Polaroidboxcopy>
+      <div class="grid grid-cols-2 lg:grid lg:grid-cols-4 gap-4">
+        <div class="mt-10 intersect:animate-fade-down intersect:duration-[6000ms]">
+          <div class="text-center"></div>
+          <Polaroidbox>STEFAN GRAGE <Text teksttype="brødtekst" font="body">Associate lecturer, Multimedia Design programme at EK.</Text></Polaroidbox>
         </div>
-        <div class="lg:mt-10 intersect:animate-fade-up intersect:duration-[6000ms]">
-          <Polaroidboxcopy>
-            <Heading htmlheading="h4" size="small" font="display" transform="uppercase">Jonas Hasle</Heading>
-            <Text teksttype="brødtekst" font="body">Assistant lecturer, Multimedia Design programme at EK.</Text>
-          </Polaroidboxcopy>
+
+        <div class="mt-20 intersect:animate-fade-up intersect:duration-[6000ms]">
+          <div class="text-center"></div>
+          <Polaroidbox>JONAS HASLE<Text teksttype="brødtekst" font="body">Assistant lecturer, Multimedia Design programme at EK.</Text></Polaroidbox>
         </div>
-        <div class="intersect:animate-fade-down intersect:duration-[6000ms]">
-          <Polaroidboxcopy>
-            <Heading htmlheading="h4" size="small" font="display" transform="uppercase">Anders Dollerup</Heading>
-            <Text teksttype="brødtekst" font="body">Assistant lecturer, Multimedia Design programme at EK.</Text>
-          </Polaroidboxcopy>
+
+        <div class="mt-10 intersect:animate-fade-down intersect:duration-[6000ms]">
+          <div class="text-center"></div>
+          <Polaroidbox>ANDERS DOLLERUP<Text teksttype="brødtekst" font="body">Assistant lecturer, Multimedia Design programme at EK.</Text></Polaroidbox>
         </div>
-        <div class="lg:mt-10 intersect:animate-fade-up intersect:duration-[6000ms]">
-          <Polaroidboxcopy>
-            <Heading htmlheading="h4" size="small" font="display" transform="uppercase">Birgitte Heide</Heading>
-            <Text teksttype="brødtekst" font="body">Associate lecturer, Multimedia Design programme at EK.</Text>
-          </Polaroidboxcopy>
+        <div class="mt-20 intersect:animate-fade-up intersect:duration-[6000ms]">
+          <div class="text-center"></div>
+          <Polaroidbox>BIRGITTE HEIDE<Text teksttype="brødtekst" font="body">Associate lecturer, Multimedia Design programme at EK.</Text></Polaroidbox>
         </div>
       </div>
     </section>
