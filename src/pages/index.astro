@@ -75,7 +75,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
     <!-- SECTION 4 -->
 
-    <section class="mt-20">
+    <section class="my-20">
       <div>
         <Heading htmlheading="h2" size="large" font="display" transform="uppercase">How to <br />participate</Heading>
       </div>
@@ -106,7 +106,71 @@ import Polaroidbox from "../components/polaroidbox.astro";
           <div class="text-center">
             <div><Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">04</Heading></div>
           </div>
-          <Polaroidbox>YOU CAN MAKE UP TO 5 SUBMISSIONS</Polaroidbox>
+          <div class="hidden lg:block">
+            <Polaroidbox>YOU CAN MAKE UP TO 5 SUBMISSIONS</Polaroidbox>
+          </div>
+
+          <div class="block lg:hidden">
+            <Polaroidbox>SUBMIT INSTANT</Polaroidbox>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-15">
+        <Button>Share your instant</Button>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="my-30">
+      <div><Heading htmlheading="h2" size="large" font="display" transform="uppercase">INSPIRATION</Heading></div>
+      <div class="mb-10"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">TAKE A LOOK AT SOME OF THE SUBMISSIONS FROM THE PAST FOR INSPIRATION</Heading></div>
+
+      <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
+        <div class="lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-6 col-span-7 col-start-5 row-start-2 row-span-1 mt-15">
+          <img src="/water.jpg" alt="water" />
+          <p><strong>AMAGER FORBRÆNDING</strong></p>
+          <p><strong>SUBMITTER - </strong> Stefan Grage</p>
+          <p><strong>STORY -</strong> I'd give my right arm for a cigarette. Taken with a Lomomatic Square.</p>
+        </div>
+
+        <div class="lg:col-start-7 lg:col-span-5 lg:row-start-6 lg:row-span-1 lg:mt-20 col-start-1 col-span-7 row-start-1 row-span-1">
+          <img src="/stones.jpg" alt="americaplads" />
+          <p><strong>AMAGER FÆLLED</strong></p>
+          <p><strong>SUBMITTER - </strong> Stefan Grage</p>
+          <p><strong>STORY -</strong> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
+        <div class="lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-50 col-start-1 col-span-7 row-span-1 row-start-1 mt-20">
+          <img src="/bridge2.jpg" alt="water" />
+          <p><strong>AMAGER FORBRÆNDING</strong></p>
+          <p><strong>SUBMITTER - </strong> Stefan Grage</p>
+          <p><strong>STORY -</strong> I'd give my right arm for a cigarette. Taken with a Lomomatic Square.</p>
+        </div>
+
+        <div class="lg:col-start-6 lg:col-span-6 lg:row-start-3 lg:row-span-1 col-start-2 col-span-10 row-span-2 row-start-2 mt-15">
+          <img src="/street.jpg" alt="street" />
+          <p><strong>AMAGER FÆLLED</strong></p>
+          <p><strong>SUBMITTER - </strong> Stefan Grage</p>
+          <p><strong>STORY -</strong> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start lg:mt-0 mt-10">
+        <div class="lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-6 col-start-1 col-span-7 row-start-1">
+          <img src="/citylights.jpg" alt="water" />
+          <p><strong>AMAGER FORBRÆNDING</strong></p>
+          <p><strong>SUBMITTER - </strong> Stefan Grage</p>
+          <p><strong>STORY -</strong> I'd give my right arm for a cigarette. Taken with a Lomomatic Square.</p>
+        </div>
+
+        <div class="lg:col-start-7 lg:col-span-5 lg:row-start-6 lg:row-span-1 col-start-5 col-span-7 row-start-2 mt-15">
+          <img src="/americaplads.jpg" alt="street" />
+          <p><strong>AMAGER FÆLLED</strong></p>
+          <p><strong>SUBMITTER - </strong> Stefan Grage</p>
+          <p><strong>STORY -</strong> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</p>
         </div>
       </div>
     </section>
