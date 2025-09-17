@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
-import Countdown from "../components/countdown.astro";
+import Countdown from "../components/Countdown.astro";
 import Button from "../components/Button.astro";
 import Polaroidbox from "../components/polaroidbox.astro";
 ---
@@ -14,8 +14,8 @@ import Polaroidbox from "../components/polaroidbox.astro";
     <section class="mt-8">
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start gap-4">
         <div class="lg:col-span-8 lg:row-start-1 col-span-12"><Heading htmlheading="h1" size="xlarge" font="display" transform="uppercase">Instant Day</Heading></div>
-        <img src="/ocean.png" alt="ocean" class="lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-2 row-span-6 col-span-5 col-start-9" />
-        <img src="/sunset.jpg" alt="sunset" class="lg:col-span-5 lg:grid grid-cols-subgrid gap-4 lg:row-span-6 col-span-8" />
+        <img src="/ocean.png" alt="ocean" class="lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-2 row-span-6 col-span-5 col-start-9 intersect:animate-fade-left intersect:duration-[5000ms]" />
+        <img src="/sunset.jpg" alt="sunset" class="lg:col-span-5 lg:grid grid-cols-subgrid gap-4 lg:row-span-6 col-span-8 intersect:animate-fade-right intersect:duration-[5000ms]" />
         <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-2 hidden lg:block" />
         <div class="lg:col-start-7 lg:col-span-5 lg:row-start-3 col-start-7"><Countdown /></div>
       </div>
@@ -25,10 +25,10 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
     <section>
       <div class="lg:grid grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8 items-start">
-        <div class="lg:col-span-5 lg:row-start-2 mt-10">
+        <div class="lg:col-span-5 lg:row-start-2 mt-10 intersect:animate-fade-right intersect:duration-[5000ms]">
           <Heading htmlheading="h2" size="large" font="display" transform="uppercase">October 8</Heading>
         </div>
-        <div class="lg:col-span-3 lg:row-start-3 hidden lg:block">
+        <div class="lg:col-span-3 lg:row-start-3 hidden lg:block intersect:animate-fade-left intersect:duration-[5000ms]">
           <Heading htmlheading="h2" size="large" font="display" transform="uppercase">2025</Heading>
         </div>
         <div class="mb-8 lg:col-span-4 lg:col-start-4 lg:row-start-3 lg:-ml-22">
@@ -40,7 +40,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
         <div class="mb-8 lg:col-start-6 lg:col-span-3 lg:row-start-1 lg:-mt-25">
           <Button>Share your instant</Button>
         </div>
-        <img src="/Symaskine.png" alt="Symaskine" class="hidden lg:block lg:col-start-9 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-25" />
+        <img src="/Symaskine.png" alt="Symaskine" class="hidden lg:block lg:col-start-9 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-25 intersect:animate-fade-left intersect:duration-[6000ms]" />
       </div>
     </section>
 
@@ -48,7 +48,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
     <section>
       <div class="lg:grid grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8 items-start">
-        <div class="lg:col-start-6 lg:col-span-6 lg:row-start-4 lg:row-span-1">
+        <div class="lg:col-start-6 lg:col-span-6 lg:row-start-4 lg:row-span-1 intersect:animate-fade-down intersect:duration-[6000ms]">
           <Heading htmlheading="h2" size="large" font="display" transform="uppercase">WHY<br />INSTANT <br />PHOTOGRAPHY?</Heading>
         </div>
         <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-2 block lg:hidden w-[70%] ml-auto my-10" />
@@ -65,11 +65,11 @@ import Polaroidbox from "../components/polaroidbox.astro";
             experience. So let's celebrate life, and make memories.</Text
           >
         </div>
-        <img src="/smoke.jpg" alt="smoke" class="hidden lg:block lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-5" />
-        <img src="/tree.png" alt="tree" class="hidden lg:block lg:col-start-10 lg:col-span-2 lg:row-start-1 lg:row-span-6" />
-        <img src="/bridge.jpg" alt="bridge" class="hidden lg:block lg:col-start-3 lg:col-span-3 lg:row-start-7 lg:row-span-3" />
-        <img src="/buildings.jpg" alt="buildings" class="hidden lg:block lg:col-start-8 lg:col-span-4 lg:row-start-8 lg:row-span-3" />
-        <img src="/pinkwater.jpg" alt="pinkwater" class="hidden lg:block lg:col-start-4 lg:col-span-3 lg:row-start-10 lg:row-span-3 mt-10" />
+        <img src="/smoke.jpg" alt="smoke" class="hidden lg:block lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-5 intersect:animate-fade-right intersect:duration-[6000ms]" />
+        <img src="/tree.png" alt="tree" class="hidden lg:block lg:col-start-10 lg:col-span-2 lg:row-start-1 lg:row-span-6 intersect:animate-fade-left intersect:duration-[6000ms]" />
+        <img src="/bridge.jpg" alt="bridge" class="hidden lg:block lg:col-start-3 lg:col-span-3 lg:row-start-7 lg:row-span-3 intersect:animate-fade-right intersect:duration-[6000ms]" />
+        <img src="/buildings.jpg" alt="buildings" class="hidden lg:block lg:col-start-8 lg:col-span-4 lg:row-start-8 lg:row-span-3 intersect:animate-fade-left intersect:duration-[6000ms]" />
+        <img src="/pinkwater.jpg" alt="pinkwater" class="hidden lg:block lg:col-start-4 lg:col-span-3 lg:row-start-10 lg:row-span-3 mt-10 intersect:animate-fade-left intersect:duration-[6000ms]" />
       </div>
     </section>
 
@@ -81,28 +81,28 @@ import Polaroidbox from "../components/polaroidbox.astro";
       </div>
 
       <div class="grid grid-cols-2 lg:grid lg:grid-cols-4 gap-4">
-        <div class="mt-10">
+        <div class="mt-10 intersect:animate-fade-down intersect:duration-[6000ms]">
           <div class="text-center">
             <Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">01</Heading>
           </div>
           <Polaroidbox>SCAN YOUR INSTANT</Polaroidbox>
         </div>
 
-        <div class="mt-20">
+        <div class="mt-20 intersect:animate-fade-up intersect:duration-[6000ms]">
           <div class="text-center">
             <div><Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">02</Heading></div>
           </div>
           <Polaroidbox>UPLOAD PHOTO</Polaroidbox>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-10 intersect:animate-fade-down intersect:duration-[6000ms]">
           <div class="text-center">
             <Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">03</Heading>
           </div>
           <Polaroidbox>AGREE TO TERMS OF SERVICE</Polaroidbox>
         </div>
 
-        <div class="mt-20">
+        <div class="mt-20 intersect:animate-fade-up intersect:duration-[6000ms]">
           <div class="text-center">
             <div><Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">04</Heading></div>
           </div>
@@ -123,19 +123,21 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
     <!-- SECTION 5 -->
     <section class="my-30">
-      <div><Heading htmlheading="h2" size="large" font="display" transform="uppercase">INSPIRATION</Heading></div>
+      <div class="intersect:animate-fade-down intersect:duration-[6000ms]">
+        <div><Heading htmlheading="h2" size="large" font="display" transform="uppercase">INSPIRATION</Heading></div>
+      </div>
       <div class="mb-10 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">TAKE A LOOK AT SOME OF THE SUBMISSIONS FROM THE PAST FOR INSPIRATION</Heading></div>
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
         <div class="lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-6 col-span-7 col-start-5 row-start-2 row-span-1 mt-15">
-          <img src="/water.jpg" alt="water" />
+          <img src="/water.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms]" />
           <p><strong>AMAGER FORBRÆNDING</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong> I'd give my right arm for a cigarette. Taken with a Lomomatic Square.</p>
         </div>
 
         <div class="lg:col-start-7 lg:col-span-5 lg:row-start-6 lg:row-span-1 lg:mt-20 col-start-1 col-span-7 row-start-1 row-span-1">
-          <img src="/stones.jpg" alt="americaplads" />
+          <img src="/stones.jpg" alt="stones" class="intersect:animate-fade-left intersect:duration-[8000ms]" />
           <p><strong>AMAGER FÆLLED</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</p>
@@ -144,14 +146,14 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
         <div class="lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-6 lg:-mt-50 col-start-1 col-span-7 row-span-1 row-start-1 mt-20">
-          <img src="/bridge2.jpg" alt="water" />
+          <img src="/bridge2.jpg" alt="water" class="intersect:animate-fade-left intersect:duration-[6000ms]" />
           <p><strong>AMAGER STRAND</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong>From this angle, copenhagen looks like a big city. Taken with a Polaroid Now+ gen 2, with a yellow tint filter.</p>
         </div>
 
         <div class="lg:col-start-6 lg:col-span-6 lg:row-start-3 lg:row-span-1 col-start-2 col-span-10 row-span-2 row-start-2 mt-15">
-          <img src="/street.jpg" alt="street" />
+          <img src="/street.jpg" alt="street" class="intersect:animate-fade-right intersect:duration-[6000ms]" />
           <p><strong>HANDS OFF MY HAPPY MEAL!</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong> A casual snap from Burger King. As it shows, the youngest kid didn't want to share his happy meal (or whatever a kids meal is called in Burger King). Taken with an Instax Mini (can't remember which camera).</p>
@@ -160,7 +162,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start lg:mt-0 mt-10">
         <div class="lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-6 col-start-1 col-span-7 row-start-1">
-          <img src="/citylights.jpg" alt="water" />
+          <img src="/citylights.jpg" alt="water" class="intersect:animate-fade-right intersect:duration-[6000ms]" />
           <p><strong>LØSERUP STRAND</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p>
@@ -169,7 +171,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
         </div>
 
         <div class="lg:col-start-7 lg:col-span-5 lg:row-start-6 lg:row-span-1 col-start-5 col-span-7 row-start-2 mt-15">
-          <img src="/americaplads.jpg" alt="street" />
+          <img src="/americaplads.jpg" alt="street" class="intersect:animate-fade-left intersect:duration-[6000ms]" />
           <p><strong>2 X ØRESTAD</strong></p>
           <p><strong>SUBMITTER - </strong> Stefan Grage</p>
           <p><strong>STORY -</strong>A double exposure from my neighbourhood, Ørestad. Taken with a Lomomatic Square.</p>
@@ -180,12 +182,14 @@ import Polaroidbox from "../components/polaroidbox.astro";
     <!-- SECTION 6 -->
 
     <section class="mb-30">
-      <Heading htmlheading="h2" size="large" font="display" transform="uppercase">ART<br />PHOTOGRAPHY <br />SCENE</Heading>
+      <div>
+        <Heading htmlheading="h2" size="large" font="display" transform="uppercase">ART<br />PHOTOGRAPHY <br />SCENE</Heading>
+      </div>
       <div class="mb-15 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">YOU CAN ALSO GET A LOT OF INSPIRATION FROM THE ART PHOTOGRAPHY SCENE</Heading></div>
 
       <div class="flex justify-center">
         <div class="lg:grid lg:grid-cols-2 gap-10 max-w-[900px]">
-          <div>
+          <div class="intersect:animate-fade-right intersect:duration-[6000ms]">
             <Polaroidbox variant="gallery"
               ><div class="mb-5 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">THE POLAROID COLLECTION</Heading></div>
               <Text teksttype="brødtekst" font="body">
@@ -197,7 +201,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
               <Button>View Collection</Button>
             </div>
           </div>
-          <div class="lg:mt-50 mt-20">
+          <div class="lg:mt-50 mt-20 intersect:animate-fade-right intersect:duration-[6000ms]">
             <Polaroidbox variant="gallery">
               <div class="mb-5 mt-5">
                 <Heading htmlheading="h4" size="small" font="display" transform="uppercase">METTE KELTER</Heading>
@@ -216,7 +220,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
       <div class="flex justify-center">
         <div class="lg:grid lg:grid-cols-2 gap-10 max-w-[900px]">
-          <div class="mt-20">
+          <div class="mt-20 intersect:animate-fade-left intersect:duration-[6000ms]">
             <Polaroidbox variant="gallery"
               ><div class="mb-5 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">DAN ISAAC WALLIN</Heading></div>
               <Text teksttype="brødtekst" font="body"> Dan Isaac Wallin is a swedish art photographer, who uses large format and vintage polaroid cameras for his work. His work hangs in numerous houses as posters. </Text>
@@ -225,7 +229,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
               <Button>View Collection</Button>
             </div>
           </div>
-          <div class="lg:mt-65 mt-20">
+          <div class="lg:mt-65 mt-20 intersect:animate-fade-left intersect:duration-[6000ms]">
             <Polaroidbox variant="gallery">
               <div class="mb-5 mt-5">
                 <Heading htmlheading="h4" size="small" font="display" transform="uppercase">MARIPOL</Heading>
