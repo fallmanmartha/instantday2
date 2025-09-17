@@ -124,7 +124,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
     <!-- SECTION 5 -->
     <section class="my-30">
       <div><Heading htmlheading="h2" size="large" font="display" transform="uppercase">INSPIRATION</Heading></div>
-      <div class="mb-1 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">TAKE A LOOK AT SOME OF THE SUBMISSIONS FROM THE PAST FOR INSPIRATION</Heading></div>
+      <div class="mb-10 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">TAKE A LOOK AT SOME OF THE SUBMISSIONS FROM THE PAST FOR INSPIRATION</Heading></div>
 
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start">
         <div class="lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-6 col-span-7 col-start-5 row-start-2 row-span-1 mt-15">
@@ -179,9 +179,67 @@ import Polaroidbox from "../components/polaroidbox.astro";
 
     <!-- SECTION 6 -->
 
-    <section>
+    <section class="mb-30">
       <Heading htmlheading="h2" size="large" font="display" transform="uppercase">ART<br />PHOTOGRAPHY <br />SCENE</Heading>
-      <div class="mb-10 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">YOU CAN ALSO GET A LOT OF INSPIRATION FROM THE ART PHOTOGRAPHY SCENE</Heading></div>
+      <div class="mb-15 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">YOU CAN ALSO GET A LOT OF INSPIRATION FROM THE ART PHOTOGRAPHY SCENE</Heading></div>
+
+      <div class="flex justify-center">
+        <div class="lg:grid lg:grid-cols-2 gap-10 max-w-[900px]">
+          <div>
+            <Polaroidbox variant="gallery"
+              ><div class="mb-5 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">THE POLAROID COLLECTION</Heading></div>
+              <Text teksttype="brødtekst" font="body">
+                The massive amount of time wasted on the small screens have spurred a counterreaction: Analogue, off-line experiences have become popular again. And instant photography is just that: An analogue, life-affirming and tactile photography
+                experience. So let's celebrate life, and make memories.</Text
+              >
+            </Polaroidbox>
+            <div class="-mt-26 ml-5">
+              <Button>View Collection</Button>
+            </div>
+          </div>
+          <div class="lg:mt-50 mt-20">
+            <Polaroidbox variant="gallery">
+              <div class="mb-5 mt-5">
+                <Heading htmlheading="h4" size="small" font="display" transform="uppercase">METTE KELTER</Heading>
+              </div>
+              <Text teksttype="brødtekst" font="body">
+                Mette Kelter is a danish art photographer, who often experiments with deliberate destruction of the chemical process in instant photos. One of the key words here is unpredictability in the work process, which leads to interesting and
+                unique artworks.
+              </Text>
+            </Polaroidbox>
+            <div class="-mt-26 ml-5">
+              <Button>View Collection</Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="lg:grid lg:grid-cols-2 gap-10 max-w-[900px]">
+          <div class="mt-20">
+            <Polaroidbox variant="gallery"
+              ><div class="mb-5 mt-5"><Heading htmlheading="h4" size="small" font="display" transform="uppercase">DAN ISAAC WALLIN</Heading></div>
+              <Text teksttype="brødtekst" font="body"> Dan Isaac Wallin is a swedish art photographer, who uses large format and vintage polaroid cameras for his work. His work hangs in numerous houses as posters. </Text>
+            </Polaroidbox>
+            <div class="-mt-26 ml-5">
+              <Button>View Collection</Button>
+            </div>
+          </div>
+          <div class="lg:mt-65 mt-20">
+            <Polaroidbox variant="gallery">
+              <div class="mb-5 mt-5">
+                <Heading htmlheading="h4" size="small" font="display" transform="uppercase">MARIPOL</Heading>
+              </div>
+              <Text teksttype="brødtekst" font="body">
+                Maripol is a french artist/photographer/film producer. Her claim to fame was in the 1980's, where she photographed famous people with a Polaroid SX-70. Her photographs are still very influential in the fashion industry.
+              </Text>
+            </Polaroidbox>
+            <div class="-mt-26 ml-5">
+              <Button>Read More</Button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </MainLayout>
