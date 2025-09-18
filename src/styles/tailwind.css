@@ -28,6 +28,9 @@
   /*Typografi */
   --font-heading: "futura-pt", sans-serif;
   --font-body: "inter", sans-serif;
+
+  /* Colours */
+  --colour-white-100: #ffffff;
 }
 
 @layer base {
