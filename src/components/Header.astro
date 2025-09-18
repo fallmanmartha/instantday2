@@ -15,7 +15,11 @@ import Button from "./Button.astro";
           <a href="/winners/" class={currentPath === "winners/" ? "font-light font-body uppercase" : "font-light font-body uppercase"}>Winners & nominees</a>
         </li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
         <li class=""><a href="/info/" class={currentPath === "info/" ? "font-light font-body uppercase" : "font-light font-body uppercase"}>Info</a></li>
-        <li><Button>Share your instant</Button></li>
+        <li class="">
+          <a href="/share/">
+            <Button>Share your instant</Button>
+          </a>
+        </li>
       </ul>
     </nav>
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
@@ -28,7 +32,11 @@ import Button from "./Button.astro";
     <ul>
       <li class="text-center py-2"><a href="/winners/" class={currentPath === "winners/" ? "font-light font-body uppercase" : "font-light font-body uppercase"}>Winners & nominees</a></li>
       <li class="text-center py-2"><a href="/info/" class={currentPath === "info/" ? "font-light font-body uppercase" : "font-light font-body uppercase"}>Info</a></li>
-      <li class="text-center"><Button>Share your instant</Button></li>
+      <li class="text-center">
+        <a href="/share/">
+          <Button>Share your instant</Button>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
