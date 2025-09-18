@@ -2,12 +2,62 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import HTMLFORM from "../components/HTML_FORM.astro";
 import ShareHero from "../components/ShareHero.astro";
+import Polaroidbox from "../components/polaroidbox.astro";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
 ---
 
 <!-- <MainLayout> -->
 <MainLayout>
-  <ShareHero />
-  <HTMLFORM />
+  <main class="container mx-auto p-8">
+    <ShareHero />
+    <div class="grid grid-cols-2 lg:grid lg:grid-cols-4 gap-4">
+      <div class="mt-10 intersect:animate-fade-down intersect:duration-[6000ms]">
+        <div class="text-center">
+          <Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">01</Heading>
+        </div>
+        <Polaroidbox
+          >SCAN YOUR INSTANT
+          <Text teksttype="brødtekst" font="body">Take a photo of your instant with your smartphone (or scan it for max. quality) - the file should be between 2 - 10 MB, in jpg/jpeg or webp format.</Text>
+        </Polaroidbox>
+      </div>
+
+      <div class="lg:my-20 intersect:animate-fade-up intersect:duration-[6000ms]">
+        <div class="text-center">
+          <div><Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">02</Heading></div>
+        </div>
+        <Polaroidbox
+          >UPLOAD PHOTO
+          <Text teksttype="brødtekst" font="body">Upload your photo and credentials to the form.</Text>
+        </Polaroidbox>
+      </div>
+
+      <div class="mt-10 intersect:animate-fade-down intersect:duration-[6000ms]">
+        <div class="text-center">
+          <Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">03</Heading>
+        </div>
+        <Polaroidbox
+          >AGREE TO TERMS OF SERVICE
+          <Text teksttype="brødtekst" font="body">Read and agree to our terms and conditions.</Text>
+        </Polaroidbox>
+      </div>
+
+      <div class="mt-20 intersect:animate-fade-up intersect:duration-[6000ms]">
+        <div class="text-center">
+          <div><Heading htmlheading="h3" size="xlarge" font="display" transform="uppercase">04</Heading></div>
+        </div>
+
+        <div class="">
+          <Polaroidbox
+            >SUBMIT INSTANT
+            <Text teksttype="brødtekst" font="body">Submit your instant. You can make up to 5 submissions - go through step 1-3 for each submission.</Text>
+          </Polaroidbox>
+        </div>
+      </div>
+    </div>
+
+    <HTMLFORM />
+  </main>
 </MainLayout>
 
 <!-- </MainLayout>  -->

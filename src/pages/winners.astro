@@ -1,12 +1,58 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import WinnerHero from "../components/WinnerHero.astro";
-import Winner from "../components/Winner.astro";
 import Nominees from "../components/Nominees.astro";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
 ---
 
 <MainLayout>
-  <WinnerHero />
-  <Winner />
-  <Nominees />
+  <main class="container mx-auto p-8">
+    <section class="mt-10">
+      <div class="lg:grid lg:grid-cols-8 lg:grid-rows-1 gap-10 mb-20">
+        <div class="grid-start-1 col-span-5">
+          <div class="intersect:animate-fade-right intersect:duration-[6000ms] mb-3">
+            <Heading htmlheading="h1" size="large" font="display" transform="uppercase">
+              WINNERS &
+              <br />
+              NOMINEES</Heading
+            >
+          </div>
+
+          <Text teksttype="brødtekst" font="body">
+            Instant Day was quite a success with more than 1000 contributions. So it was difficult to find a winner.
+            <br />
+            After a couple of long but exciting days, the judges agreed on the winner and the 8 nominees.</Text
+          >
+        </div>
+
+        <div class="intersect:animate-fade-left intersect:duration-[6000ms] lg:col-start-6 col-span-2 w-100 grid md:block grid-cols-3 lg:mb-0 mb-20">
+          <img src="/Symaskine.png" alt="" class="col-start-2 col-span-2" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div class="intersect:animate-fade-down intersect:duration-[6000ms]">
+          <Heading htmlheading="h2" size="large" font="display" transform="uppercase"
+            >THE
+            <br />
+            WINNER</Heading
+          >
+        </div>
+        <div class="lg:grid lg:grid-cols-2 lg:gap-10">
+          <img src="/smoke.jpg" alt="" class="mb-5 intersect:animate-fade-right intersect:duration-[6000ms]" />
+
+          <div>
+            <Text teksttype="brødtekst" font="body">NEW MEETS OLD </Text>
+
+            <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+            <Text teksttype="brødtekst" font="body">
+              I wanted to catch the new city development district, Ørestad, in a shade of old school. So I used a Polaroid Now+ gen 2 in tripod mode with an i-Type black and white film in order to make a long exposure.</Text
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <Nominees />
+  </main>
 </MainLayout>
