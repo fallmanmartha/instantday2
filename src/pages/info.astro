@@ -10,7 +10,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
   <main class="container mx-auto p-8">
     <section class="mt-8">
       <div class="grid grid-cols-12 grid-rows-[auto_auto] lg:gap-8 items-start gap-4">
-        <div class="lg:col-span-8 lg:row-start-1 lg:col-start-1 col-span-12">
+        <div class="lg:col-span-8 lg:row-start-1 lg:col-start-1 col-span-12 intersect:animate-fade-right intersect:duration-[5000ms]">
           <Heading htmlheading="h1" size="xlarge" font="display" transform="uppercase">Who are<br /> we?</Heading>
         </div>
         <div class="lg:col-span-5 lg:row-start-1 lg:col-start-4 lg:mt-40 col-span-12">
@@ -24,13 +24,13 @@ import Polaroidbox from "../components/polaroidbox.astro";
         </div>
 
         <img src="/ocean.png" alt="ocean" class="lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-2 row-span-6 col-span-5 col-start-9 intersect:animate-fade-left intersect:duration-[5000ms]" />
-        <img src="/sunset.jpg" alt="sunset" class="lg:col-span-5 lg:grid grid-cols-subgrid gap-4 lg:row-span-6 col-span-8 intersect:animate-fade-right intersect:duration-[5000ms]" />
-        <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-3 hidden lg:block intersect:animate-fade-left intersect:duration-[5000ms]" />
+        <img src="/sunset.jpg" alt="sunset" class="lg:col-span-5 lg:grid grid-cols-subgrid gap-4 lg:row-span-6 col-span-8 intersect:animate-fade-right intersect:duration-[6000ms]" />
+        <img src="/burgerking.jpg" alt="burgerking" class="lg:col-start-6 lg:col-span-4 row-start-3 hidden lg:block intersect:animate-fade-left intersect:duration-[6000ms]" />
       </div>
     </section>
 
     <section class="mt-10">
-      <div class="mb-5 lg:mb-10 text-right">
+      <div class="mb-5 lg:mb-10 text-right intersect:animate-fade-left intersect:duration-[5000ms]">
         <Heading htmlheading="h2" size="large" font="display" transform="uppercase">The<br /> Judges</Heading>
       </div>
       <div class="grid grid-cols-2 lg:grid lg:grid-cols-4 gap-4">
@@ -56,22 +56,22 @@ import Polaroidbox from "../components/polaroidbox.astro";
     </section>
     <section>
       <div class="grid grid-cols-2 gap-4 mt-30 lg:mt-60 lg:gap-10 lg:pl-20 lg:pr-10">
-        <div><img src="/sponsor.jpeg" alt="EKlogo" class="intersect:animate-fade-right intersect:duration-[5000ms]" /></div>
+        <div><img src="/sponsor.jpeg" alt="EKlogo" class="intersect:animate-fade-right intersect:duration-[6000ms]" /></div>
         <div>
-          <Heading htmlheading="h2" size="large" font="display" transform="uppercase">Sponsor</Heading>
+          <div class="intersect:animate-fade-left intersect:duration-[5000ms]"><Heading htmlheading="h2" size="large" font="display" transform="uppercase">Sponsor</Heading></div>
           <Text teksttype="brødtekst" font="body">Instant Day is not affiliated to any companies within the Instant Photography industry. The only organisation backing us is EK - Business Academy Copenhagen. At least so far.</Text>
         </div>
       </div>
     </section>
     <section class="mt-20 lg:mt-50 mb-20 lg:mb-30">
-      <div class="mb-2 lg:mb-5"><Heading htmlheading="h2" size="large" font="display" transform="uppercase">Terms & <br />conditions</Heading></div>
+      <div class="mb-2 lg:mb-5 intersect:animate-fade-right intersect:duration-[6000ms]"><Heading htmlheading="h2" size="large" font="display" transform="uppercase">Terms & <br />conditions</Heading></div>
       <div><Heading htmlheading="h5" size="small" font="display" transform="uppercase">BY PARTICIPATING IN THE CONTEST, YOU ACCEPT THE FOLLOWING TERMS AND CONDITIONS </Heading></div>
       <div class="mt-8 grid grid-cols-1 gap-2 lg:mt-20 lg:grid-cols-2 lg:gap-4">
-        <div class="intersect:animate-fade-right intersect:duration-[5000ms]">
+        <div class="lg:intersect:animate-fade-right intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">PARTICIPATION</Heading>
           <Text teksttype="brødtekst" font="body">The competition is open to all photographers, both amateurs and professionals, who are over 18 years old. </Text>
         </div>
-        <div class="lg:row-start-2 lg:col-start-2 intersect:animate-fade-left intersect:duration-[5000ms]">
+        <div class="lg:row-start-2 lg:col-start-2 lg:intersect:animate-fade-left intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">INSTANT PHOTO</Heading>
           <Text teksttype="brødtekst" font="body"
             >Every submission has to be an analogue instant photo - not a digital montage made in a photo editing suite. The instant can be made in various ways, with analogue instant cameras, digital instant cameras like ie. the Fujifilm EVO or
@@ -80,32 +80,32 @@ import Polaroidbox from "../components/polaroidbox.astro";
             as a photo showing the instants in a frame, on the wall etc. The instant doesn’t need to be just one photo: It can be a panorama or collage of multiple instants that make up one submission.
           </Text>
         </div>
-        <div class="lg:row-start-3 lg:col-start-1 intersect:animate-fade-right intersect:duration-[5000ms]">
+        <div class="lg:row-start-3 lg:col-start-1 lg:intersect:animate-fade-right intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">CONSENT</Heading>
           <Text teksttype="brødtekst" font="body"
             >It is prohibited to upload photographs of people who have not given consent to the publication of the image. Images of people in private or embarrassing situations, regardless of whether they are photographed in a public place, are not
             allowed.
           </Text>
         </div>
-        <div class="lg:row-start-4 lg:col-start-2 intersect:animate-fade-left intersect:duration-[5000ms]">
+        <div class="lg:row-start-4 lg:col-start-2 lg:intersect:animate-fade-left intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">LEGAL STUFF</Heading>
           <Text teksttype="brødtekst" font="body"
             >The organizers reserve the right to disqualify any participant who violates these conditions. The organizers assume no responsibility for any loss, damage or injury that may arise as a result of participation in the competition or the
             use of prizes. Participants release the organizers from any claim, lawsuit or liability related to their participation in the competition.
           </Text>
         </div>
-        <div class="lg:row-start-5 lg:col-start-1 intersect:animate-fade-right intersect:duration-[5000ms]">
+        <div class="lg:row-start-5 lg:col-start-1 lg:intersect:animate-fade-right intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">NUMBER OF SUBMISSIONS</Heading>
           <Text teksttype="brødtekst" font="body">You can enter the competition with a total of five submissions. </Text>
         </div>
-        <div class="lg:row-start-6 lg:col-start-2 intersect:animate-fade-left intersect:duration-[5000ms]">
+        <div class="lg:row-start-6 lg:col-start-2 lg:intersect:animate-fade-left intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">USAGE RIGHTS </Heading>
           <Text teksttype="brødtekst" font="body"
             >By submitting one or more images and thereby participating in the competition, you agree that the image may be used for the promotion of the photo competition and possibly in physical exhibition spaces afterwards. The organizers will
             credit the participants wherever practical and reasonably possible.</Text
           >
         </div>
-        <div class="lg:row-start-7 lg:col-start-1 intersect:animate-fade-right intersect:duration-[5000ms]">
+        <div class="lg:row-start-7 lg:col-start-1 lg:intersect:animate-fade-right intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">COPYRIGHT</Heading>
           <Text teksttype="brødtekst" font="body"
             >You must be the author of the submitted instants and have the rights to publish them. The instants must be free of third party rights. Participants retain all copyright in their submitted instants. By submitting instants to the
@@ -113,7 +113,7 @@ import Polaroidbox from "../components/polaroidbox.astro";
             materials. The organizers will credit the participants wherever practical and reasonable.</Text
           >
         </div>
-        <div class="lg:row-start-8 lg:col-start-2 intersect:animate-fade-left intersect:duration-[5000ms]">
+        <div class="lg:row-start-8 lg:col-start-2 lg:intersect:animate-fade-left intersect:duration-[6000ms]">
           <Heading htmlheading="h5" size="small" font="display" transform="uppercase">ANNOUNCEMENT OF WINNERS</Heading>
           <Text teksttype="brødtekst" font="body"
             >The winners of the competition will be announced on the official website and/or social media platforms of the organizers. By participating in the competition, the winners consent to the publication of their names and submitted photos for
