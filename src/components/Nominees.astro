@@ -1,59 +1,139 @@
 ---
+import Heading from "./Heading.astro";
+import Text from "./Text.astro";
 ---
 
-<section>
-<h1 class="ml-50 mr-50 mt-30 font-heading text-computer-h2 font-semibold">
-    BEST OF 2025 
-        <br>
-    NOMINEES    
-</h1>
+<section class="mt-30">
+  <div class="flex items-center mb-10 intersect:animate-fade-down intersect:duration-[6000ms]">
+    <Heading htmlheading="h2" size="large" font="display" transform="uppercase"
+      >BEST OF 2025
+      <br />
+      NOMINEES
+    </Heading>
+  </div>
 
-<h1 class="sm:inline lg:hidden">MOBILE</h1>
-<h1 class="sm:hidden lg:inline">DESK</h1>
-    
-<div class="sm:grid grid-cols-2 w-200 mr-auto ml-auto mt-20 lg:mr-175">
-    <div class="place-self-end mr-10 font-semibold">
-        <h1 class="place-self-end text-computer-h4">01</h1>
-        <img src="/pinkwater.jpg" alt="" class="h-100">
+  <div class="sm:grid grid-cols-2 grid-rows-2 gap-15">
+    <!-- box 1 -->
+    <div class="col-span-1 col start-1 row-start-1 row-span-1 intersect:animate-fade-right intersect:duration-[6000ms]">
+      <div class="mt-5 lg:text-left text-right">
+        <Heading htmlheading="h3" size="medium" font="display" transform="uppercase">01</Heading>
+      </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <img src="/pinkwater.jpg" alt="pinkwater" class="lg:row-start-2 lg:col-span-1 lg:col-start-1 row-start-1 col-span-1 col-start-2" />
+
+        <div class="lg:col-start-2 lg:row-start-2 col-start-1 row-start-1">
+          <Text teksttype="brødtekst" font="body">KARLSTRUP & COFFEE</Text>
+
+          <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+
+          <Text teksttype="brødtekst" font="body">STORY</Text>
+          <Text teksttype="brødtekst" font="body"> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</Text>
         </div>
-
-    <div class="col-start-2 mt-10">
-        <p class="font-semibold">KARLSTRUP & COFFEE
-            <br>
-            SUBMITTER
-        </p>
-
-        <p>
-            Stefan Grage
-            <br>
-        </p>
-
-        <p class="font-semibold">STORY</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae exercitationem quae ut, voluptates laborum reprehenderit. Beatae, laudantium nulla. Ullam numquam itaque ipsum necessitatibus autem.</p>
-
-    </div>
+      </div>
     </div>
 
-    <div class="sm:grid grid-cols-2 w-200 mr-auto ml-auto mt-20 lg:ml-175 -mb-500px">
-    <div class="col-start-2 place-self-start mr-10 font-semibold">
-        <h1 class="place-self-end text-computer-h4">01</h1>
-        <img src="/ocean.png" alt="" class="h-100">
+    <!-- box 2 -->
+    <div class="col-span-1 col-start-2 row-start-2 row-span-2 lg:-mt-30 mt-20 intersect:animate-fade-left intersect:duration-[6000ms]">
+      <div class="mt-5">
+        <Heading htmlheading="h3" size="medium" font="display" transform="uppercase">02</Heading>
+      </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <img src="/ocean.png" alt="ocean" class="row-start-2 col-span-1 col-start-1" />
+
+        <div class="col-start-2 row-start-2">
+          <Text teksttype="brødtekst" font="body">KARLSTRUP & COFFEE</Text>
+
+          <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+
+          <Text teksttype="brødtekst" font="body">STORY</Text>
+          <Text teksttype="brødtekst" font="body"> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</Text>
         </div>
-
-    <div class="row-start-1 mt-10">
-        <p class="font-semibold">KARLSTRUP & COFFEE
-            <br>
-            SUBMITTER
-        </p>
-
-        <p>
-            Stefan Grage
-            <br>
-        </p>
-
-        <p class="font-semibold">STORY</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae exercitationem quae ut, voluptates laborum reprehenderit. Beatae, laudantium nulla. Ullam numquam itaque ipsum necessitatibus autem.</p>
-
+      </div>
     </div>
+  </div>
+  <div class="sm:grid grid-cols-2 grid-rows-2 gap-15">
+    <!-- box 3 -->
+    <div class="col-span-1 col start-1 row-start-1 row-span-1 lg:-mt-30 mt-20 intersect:animate-fade-right intersect:duration-[6000ms]">
+      <div class="mt-5 lg:text-left text-right">
+        <Heading htmlheading="h3" size="medium" font="display" transform="uppercase">03</Heading>
+      </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <img src="/pinkwater.jpg" alt="pinkwater" class="lg:row-start-2 lg:col-span-1 lg:col-start-1 row-start-1 col-span-1 col-start-2" />
+
+        <div class="lg:col-start-2 lg:row-start-2 col-start-1 row-start-1">
+          <Text teksttype="brødtekst" font="body">KARLSTRUP & COFFEE</Text>
+
+          <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+
+          <Text teksttype="brødtekst" font="body">STORY</Text>
+          <Text teksttype="brødtekst" font="body"> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</Text>
+        </div>
+      </div>
     </div>
+
+    <!-- box 4 -->
+    <div class="col-span-1 col-start-2 row-start-2 row-span-2 lg:-mt-40 mt-20 intersect:animate-fade-left intersect:duration-[6000ms]">
+      <div class="mt-5">
+        <Heading htmlheading="h3" size="medium" font="display" transform="uppercase">04</Heading>
+      </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <img src="/ocean.png" alt="ocean" class="row-start-2 col-span-1 col-start-1" />
+
+        <div class="col-start-2 row-start-2">
+          <Text teksttype="brødtekst" font="body">KARLSTRUP & COFFEE</Text>
+
+          <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+
+          <Text teksttype="brødtekst" font="body">STORY</Text>
+          <Text teksttype="brødtekst" font="body"> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</Text>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:grid grid-cols-2 grid-rows-2 gap-15">
+    <!-- box 5 -->
+    <div class="col-span-1 col start-1 row-start-1 row-span-1 lg:-mt-10 mt-20 intersect:animate-fade-right intersect:duration-[6000ms]">
+      <div class="mt-5 lg:text-left text-right">
+        <Heading htmlheading="h3" size="medium" font="display" transform="uppercase">05</Heading>
+      </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <img src="/pinkwater.jpg" alt="pinkwater" class="lg:row-start-2 lg:col-span-1 lg:col-start-1 row-start-1 col-span-1 col-start-2" />
+
+        <div class="lg:col-start-2 lg:row-start-2 col-start-1 row-start-1">
+          <Text teksttype="brødtekst" font="body">KARLSTRUP & COFFEE</Text>
+
+          <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+
+          <Text teksttype="brødtekst" font="body">STORY</Text>
+          <Text teksttype="brødtekst" font="body"> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</Text>
+        </div>
+      </div>
+    </div>
+
+    <!-- box 6-->
+    <div class="col-span-1 col-start-2 row-start-2 row-span-2 lg:-mt-30 mt-20 mb-20 intersect:animate-fade-left intersect:duration-[6000ms]">
+      <div class="mt-5">
+        <Heading htmlheading="h3" size="medium" font="display" transform="uppercase">06</Heading>
+      </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <img src="/ocean.png" alt="ocean" class="row-start-2 col-span-1 col-start-1" />
+
+        <div class="col-start-2 row-start-2">
+          <Text teksttype="brødtekst" font="body">KARLSTRUP & COFFEE</Text>
+
+          <Text teksttype="brødtekst" font="body">SUBMITTER - Stefan Grage</Text>
+
+          <Text teksttype="brødtekst" font="body">STORY</Text>
+          <Text teksttype="brødtekst" font="body"> A little snap from Amager Fælled, a large common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic Square.</Text>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
