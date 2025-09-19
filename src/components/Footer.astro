@@ -4,8 +4,13 @@ import Heading from "./Heading.astro";
 
 <footer class="bg-white text-black pb-5 grid grid-cols-2 intersect:animate-fade-up intersect:duration-[5000ms]">
   <div class="container mx-auto pl-5 lg:pl-12 col-span-1 col-start-1 flex flex-col gap-4">
-    <Heading font="display" size="xsmall">ABOUT US</Heading>
-    <Heading font="display" size="xsmall">TERMS & CONDITIONS</Heading>
+    <a href="/info">
+      <Heading font="display" size="xsmall">ABOUT US</Heading>
+    </a>
+
+    <a href="/info#legals">
+      <Heading font="display" size="xsmall">TERMS & CONDITIONS</Heading>
+    </a>
   </div>
   <div class="col-span-1 col-start-2 flex justify-end pr-5 lg:pr-12">
     <div class="flex flex-col gap-2 items-start">
