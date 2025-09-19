@@ -1,0 +1,33 @@
+---
+import Button from "./Button.astro";
+import Heading from "./Heading.astro";
+---
+
+<div x-data="{ submitted: false }">
+  <template x-if="!submitted">
+    <div @click="submitted = true">
+      <Button variant="secondary"> Submit - Share your instant </Button>
+    </div>
+  </template>
+
+  <template x-if="submitted">
+    <div class="p-10 bg-black text-white text-center">
+      <div class="mb-5">
+        <Heading htmlheading="h4" size="xsmall" font="display" transform="uppercase">You're an instant champ! Thanks for the contribution:-)</Heading>
+      </div>
+      <div class="mb-5">
+        <Heading htmlheading="h4" size="xsmall" font="display" transform="uppercase">The competition runs until October 18. Shortly after, we will review all the images, and announce a winner on October 31.</Heading>
+      </div>
+      <div class="mb-5">
+        <Heading htmlheading="h4" size="xsmall" font="display" transform="uppercase">If you're one of the lucky winners or nominees, we will contact you by e-mail. Good luck!</Heading>
+      </div>
+      <div class="mb-5">
+        <Heading htmlheading="h4" size="xsmall" font="display" transform="uppercase">NB! Want to make one more submission? Start the submission form over:-) </Heading>
+      </div>
+
+      <div @click="window.location.reload()">
+        <Button>Share another instant</Button>
+      </div>
+    </div>
+  </template>
+</div>
